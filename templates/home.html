@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Recommendation System</title>
+    <link rel="icon" href="../static/icon.png">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <!-- header -->
+<div class="header">
+    <div class="menu">
+      <ul>
+        <div class="menuitems">
+        <div class="Home"><a href="/"><li>Home</li></a></div>
+        <div class="about"><a href="/about"><li>About</li></a></div>   
+    </div>
+    </ul>
+    </div>
+    <div class="headings">
+       <h1>Hotel Recommendation System</h1>
+    </div>
+</div>
+    <!-- content -->
+<div class="container">
+    <h1 id="heading"></h1>
+    <form action="/result" method="post">
+        <div class="city">
+            <input type="text" name="city">
+        </div>
+        <div class="submit-btn">
+            <input type="submit">
+        </div>
+    </form>
+</div>
+   
+   
+    <!-- footer -->
+    
+    <div class="footer">
+        <p>Hotel Recommendation System Created By Deepu Singh</p>
+    </div>
+
+
+
+    <script>
+    let i = 0;
+    let txt = 'Enter City Name'; 
+    function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("heading").innerHTML += txt.charAt(i);
+                i++;
+        setTimeout(typeWriter,200);
+            }
+        }
+     typeWriter()
+        
+    
+    </script>
+</body>
+</html>
