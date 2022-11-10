@@ -3,7 +3,7 @@ import pandas as pd
 app=Flask(__name__)
 # Function to recommend hotels
 def based_on_city(city):
-    hotel_data=pd.read_csv('/media/deepu/HardDisk/iitj/Hotel_Recommendation_system/datasets/hotel_data.csv')
+    hotel_data=pd.read_csv('datasets/hotel_data.csv')
     hotel_data['city']=hotel_data['city'].str.lower()
     matched_city=hotel_data[hotel_data['city']==city.lower()]
     matched_city=matched_city.sort_values(by='starrating',ascending=False)
