@@ -9,7 +9,8 @@ Download link:https://www.kaggle.com/code/haryantohidayat2/hotel-recommender/dat
 steps to run jupyter notebook code in your system.
 
 first step-> Download the CSV file from above link and keep it in dataset folder.
-second step-> run the command "pip install Pipfile"
+second step-> run the command "pip install Pipfile"(Please ensure you have python version which is mentioned in pip file otherwise change python version 
+in Pip file as well as Pipfile.lock according to your system
 third step-> you are good to go run command jupyter-lab
 
 
